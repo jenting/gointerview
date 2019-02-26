@@ -14,7 +14,6 @@ func main() {
 	wg.Add(20)
 	for i := 0; i < 10; i++ {
 		go func() {
-			// i will always be 10.
 			fmt.Println("i: ", i)
 			wg.Done()
 		}()
